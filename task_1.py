@@ -78,15 +78,3 @@ class OnlineSalesRegisterCollector:
         if len(num_str) != 10:
             raise ValueError('Необходимо ввести 10 цифр после "+7"')
         return f"+7{num_str}"
-
-
-basket = OnlineSalesRegisterCollector()
-basket.add_item_to_cheque("кола")
-basket.add_item_to_cheque("молоко")
-print(basket.twenty_percent_tax_calculation())
-print(basket.ten_percent_tax_calculation())
-print(basket.total_tax())
-print(basket.name_items)
-print(basket.number_items)
-print(basket.check_amount())
-print(basket.get_telephone_number(.111111111))
